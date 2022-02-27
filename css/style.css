@@ -31,4 +31,6 @@ img {
     height: 100vh;
     background-color: blue;
     display: none;
+    position: absolute;
+    bottom: -100vh;
 }
