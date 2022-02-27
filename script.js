@@ -1,5 +1,5 @@
 const textContainer = document.querySelector("#text-container");
-const svg = document.querySelector('svg');
+const img = document.querySelector('img');
 const giantBlock = document.querySelector('#giant-block');
 const tl = gsap.timeline({ defaults: { duration: .75 } });
 var countdown = 3;
@@ -8,11 +8,11 @@ const timer = setInterval(runTimer, 1500);
 
 function rocket() {
     textContainer.style.display = 'none';
-    tl.set([svg, giantBlock], { autoAlpha: 1, display: 'block' })
+    tl.set([img, giantBlock], { autoAlpha: 1, display: 'block' })
         .addLabel('vibrate')
-        .to(svg, { duration: 0.1, x: "-=5", yoyo: true, repeat: -1 }, 'vibrate')
-        .to(svg, { duration: 5, y: "-100vh" }, 'vibrate')
-        .from(giantBlock, { duration: 10, y: "700" }, 'vibrate')
+        .to(img, { duration: 0.1, x: "-=5", yoyo: true, repeat: -1 }, 'vibrate')
+        .to(img, { duration: 10, y: "-1000" }, 'vibrate')
+        .from(giantBlock, { duration: 10, y: "2000" }, 'vibrate')
 }
 
 function runTimer() {
