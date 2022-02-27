@@ -11,8 +11,7 @@ function rocket() {
     tl.set([img, giantBlock], { autoAlpha: 1, display: 'block' })
         .addLabel('vibrate')
         .to(img, { duration: 0.1, x: "-=5", yoyo: true, repeat: -1 }, 'vibrate')
-        .to(img, { duration: 10, y: "-110vh" }, 'vibrate')
-        .to(giantBlock, { duration: 12, y: "-100vh", onComplete: function () { tl.pause() } }, 'vibrate')
+        .to([img, giantBlock] , { duration: 10, y: "-120vh", onComplete: function () { tl.pause() } }, 'vibrate')
 }
 
 function runTimer() {

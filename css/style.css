@@ -21,7 +21,7 @@ body {
 img {
     display: none;
     position: absolute;
-    bottom: 0;
+    bottom: -10vh;
     left: 50%;
     transform: rotate(-45deg);
 }
@@ -32,5 +32,5 @@ img {
     background-color: blue;
     display: none;
     position: absolute;
-    bottom: -100vh;
+    bottom: -120vh;
 }
