@@ -1,0 +1,32 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+}
+
+body {
+    margin: 0;
+    background-color: #000;
+}
+
+#text-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-size: 50px;
+}
+
+svg {
+    display: none;
+    transform: scale(0.3);
+    position: absolute;
+    top: 300px;
+    left: 370px;
+}
+
+#giant-block {
+    width: 100vw;
+    height: 100vh;
+    background-color: blue;
+    display: none;
+}
